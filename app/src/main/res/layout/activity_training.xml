@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧠 Modo Entrenamiento"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Personaliza SignTranslate en este teléfono. Captura hasta 2 manos, movimiento y rostro/expresión. Las señas antiguas siguen siendo compatibles."
+            android:textColor="#64748B"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/inputCustomTrainingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input"
+            android:hint="Escribe una palabra o frase nueva (opcional)"
+            android:paddingHorizontal="14dp"
+            android:singleLine="true"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Si escribes aquí, esta frase tendrá prioridad sobre la lista de abajo."
+            android:textColor="#64748B"
+            android:textSize="12sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTrainingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input"/>
+
+        <Button
+            android:id="@+id/btnSwitchTrainingCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="📷 Usar cámara trasera"
+            android:textAllCaps="false"/>
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewTraining"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="12dp"
+            android:background="#111827"/>
+
+        <TextView
+            android:id="@+id/txtTrainingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:text="Preparando cámara…"
+            android:textColor="#0F172A"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/txtTrainingSamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Muestras: 0"
+            android:textColor="#2563EB"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/btnCaptureSample"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="📸 Guardar una muestra"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnRapidCapture"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="⚡ Capturar 10 muestras"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCaptureMovement"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="🎥 Guardar seña con movimiento (hasta 6 s)"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@drawable/bg_card"
+            android:text="Mañana: mantén rostro, torso y ambas manos visibles. Para movimiento/expresión graba 5 secuencias completas. La app guarda manos y un descriptor facial de boca, ojos, cejas y orientación; las señas antiguas de manos continúan funcionando. Exportar ZIP incluye los tres datasets."
+            android:textColor="#475569"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp"/>
+
+        <Button
+            android:id="@+id/btnDeleteTraining"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="🗑 Borrar entrenamiento de esta seña"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnExportTraining"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="📦 Exportar todas las señas (ZIP)"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnTrainingFolder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="📁 Ver ubicación del dataset"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnBackTraining"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="← Volver al inicio"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

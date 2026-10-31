@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@drawable/bg_gradient">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🤟"
+                android:textSize="58sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignTranslate"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Comunicación inclusiva en tiempo real"
+                android:textColor="#DBEAFE"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/bg_status_chip"
+                android:text="VERSIÓN FINAL • PROYECTO DE TESIS"
+                android:textColor="#0C4A6E"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué deseas hacer?"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="23sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Selecciona un módulo para comenzar"
+                android:textColor="#64748B"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnSenasTexto"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_primary_button"
+                android:text="📷   Señas → Texto"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnConversacionHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="💬   Modo conversación"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnLenseguaHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🤟   Módulo LENSEGUA"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnDemoHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="▶   Demostración guiada"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnDiccionarioHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="📚   Diccionario ampliado"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnAprendizajeHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🎓   Modo Aprendizaje"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnEntrenamientoHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🧠   Modo Entrenamiento"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnAjustesHome"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="⚙   Ajustes y perfiles"
+                android:textAllCaps="false"
+                android:textColor="#334155"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnEmergenciaHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🆘   Comunicación rápida"
+                android:textAllCaps="false"
+                android:textColor="#0F172A"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnDiagnosticoHome"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🛠   Diagnóstico del dispositivo"
+                android:textAllCaps="false"
+                android:textColor="#334155"
+                android:textSize="16sp"/>
+
+            <Button
+            android:id="@+id/btnMisSenasHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="🤟 Mis señas entrenadas"
+            android:textAllCaps="false" />
+
+        <Button
+                android:id="@+id/btnAcercaHome"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="ℹ   Acerca del proyecto"
+                android:textAllCaps="false"
+                android:textColor="#334155"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="18dp"
+                android:text="SignTranslate • Versión final de tesis"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

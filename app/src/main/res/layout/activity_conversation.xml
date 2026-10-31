@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Modo conversación"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Comunicación bidireccional entre voz, texto y señas"
+            android:textSize="14sp"
+            android:textColor="#64748B"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="14dp">
+            <androidx.camera.view.PreviewView
+                android:id="@+id/conversationPreviewView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.tu.org.signstudio.HandOverlayView
+                android:id="@+id/conversationHandOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnCambiarCamaraConversacion"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:text="🔄 Cámara"
+                android:textAllCaps="false"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txtEstadoCamaraConversacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="📷 Cámara lista para señas"
+            android:textColor="#334155"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtChat"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="18dp"
+            android:padding="16dp"
+            android:gravity="top"
+            android:background="@drawable/bg_card"
+            android:text="La conversación aparecerá aquí."
+            android:textSize="16sp"
+            android:textColor="#0F172A"/>
+
+        <TextView
+            android:id="@+id/txtConversationSignMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Avatar LENSEGUA • listo en la conversación"
+            android:textStyle="bold"
+            android:textColor="#334155"/>
+
+        <com.tu.org.signstudio.DynamicSignPlayerView
+            android:id="@+id/conversationSignPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"/>
+
+        <TextView
+            android:id="@+id/txtConversationSignNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Avatar listo • la animación se reproduce aquí"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+
+        <Button
+            android:id="@+id/btnHablarConversacion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="🎤 Hablar como persona oyente"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/inputMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input"
+            android:hint="Escribe el texto traducido de una seña"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"/>
+
+        <Button
+            android:id="@+id/btnAgregarMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="🤟 Agregar mensaje de señas"
+            android:textColor="#0F172A"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnAbrirCamaraConversacion"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="📷 Cámara"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btnAbrirLenseguaConversacion"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="🤟 LENSEGUA"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLeerUltimoMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="🔊 Leer último mensaje"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMostrarSenas"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="🤟 Mostrar último mensaje en señas"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnCompartirConversacion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="📤 Compartir conversación"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnFrasesRapidas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="⚡ Frases rápidas"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnLimpiarHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="Limpiar historial"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnVolverConversacion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_secondary_button"
+            android:text="← Volver al inicio"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

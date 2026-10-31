@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ Acerca de SignTranslate"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="18dp"
+            android:background="@drawable/bg_card"
+            android:text="IMPLEMENTACIÓN DE APLICACIÓN ANDROID PARA INTERACTUAR EN TIEMPO REAL CON PERSONAS DE DISCAPACIDAD AUDITIVA"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Objetivo de la beta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Demostrar una solución de apoyo a la comunicación que integra reconocimiento de señas, texto, voz y recursos LENSEGUA en una aplicación Android."
+            android:textSize="16sp"
+            android:textColor="#334155"
+            android:lineSpacingExtra="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tecnologías implementadas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_card"
+            android:text="• Kotlin / Android Studio
+• CameraX
+• MediaPipe Hand Landmarker
+• ONNX Runtime
+• Modelo de clasificación de señas
+• Speech Recognizer
+• TextToSpeech
+• Módulo visual LENSEGUA
+• Historial local de conversación"
+            android:textSize="16sp"
+            android:textColor="#334155"
+            android:lineSpacingExtra="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Estado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Versión beta demostrativa. El reconocimiento puede mejorarse con más datos de entrenamiento y validación adicional de vocabulario LENSEGUA."
+            android:textSize="16sp"
+            android:textColor="#334155"
+            android:lineSpacingExtra="4dp"/>
+        <Button
+            android:id="@+id/btnVolverAcerca"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="← Volver al inicio"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

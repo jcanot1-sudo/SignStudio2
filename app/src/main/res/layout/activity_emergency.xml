@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F4F7FB">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🆘 Comunicación rápida" android:textSize="28sp" android:textStyle="bold" android:textColor="#0F172A"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Toca una frase para reproducirla en voz alta." android:textSize="15sp" android:textColor="#64748B"/>
+<Button android:id="@+id/btnEmergencyHelp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="20dp" android:text="🆘 Necesito ayuda" android:textAllCaps="false" android:textSize="18sp"/>
+<Button android:id="@+id/btnEmergencyDoctor" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:text="🏥 Necesito un médico" android:textAllCaps="false" android:textSize="18sp"/>
+<Button android:id="@+id/btnEmergencyFamily" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:text="📞 Llame a mi familiar" android:textAllCaps="false" android:textSize="18sp"/>
+<Button android:id="@+id/btnEmergencyRepeat" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:text="🔁 No entiendo, repita por favor" android:textAllCaps="false" android:textSize="17sp"/>
+<Button android:id="@+id/btnEmergencyBathroom" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:text="🚻 ¿Dónde está el baño?" android:textAllCaps="false" android:textSize="18sp"/>
+<Button android:id="@+id/btnEmergencyWater" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="10dp" android:text="💧 Necesito agua" android:textAllCaps="false" android:textSize="18sp"/>
+<Button android:id="@+id/btnEmergencyBack" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="18dp" android:text="← Volver" android:textAllCaps="false"/>
+</LinearLayout></ScrollView>

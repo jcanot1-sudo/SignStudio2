@@ -1,0 +1,6 @@
+PARCHE EXPERIMENTAL para SignStudio (11) con el parche rápido anterior.
+Reemplazar únicamente ConversationActivity.kt en app/src/main/java/com/tu/org/signstudio/.
+Conservar copia del archivo anterior y respaldo de los entrenamientos.
+No desinstalar la app. Compilar y probar antes de grabar.
+Cambio: conserva secuencia de la primera mano, reinicia confirmaciones al entrar la segunda y espera 10 fotogramas para evitar predicciones parciales.
+No probado en dispositivo ni compilado.
